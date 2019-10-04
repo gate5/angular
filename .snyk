@@ -1,0 +1,14 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - protractor > saucelabs > https-proxy-agent:
+        patched: '2019-10-04T01:38:46.100Z'
+    - protractor > browserstack > https-proxy-agent:
+        patched: '2019-10-04T01:38:46.100Z'
+    - '@bazel/karma > karma-sauce-launcher > sauce-connect-launcher > https-proxy-agent':
+        patched: '2019-10-04T01:38:46.100Z'
+    - '@bazel/karma > karma-sauce-launcher > saucelabs > https-proxy-agent':
+        patched: '2019-10-04T01:38:46.100Z'
